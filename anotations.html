@@ -1,0 +1,51 @@
+<!--
+    -Comando para criar o package.json: npm init -y;
+    -Para instalar express: npm install express: framework para lidar com rotas;
+    -Para instalar a biblioteca de tipagem do express: npm install @types/express -D;
+    * -D: usar em ambiente de desenvolvimento;
+    -Para que o node possa entender o TypeScript, instalar a dependencia pelo comando: npm install ts-node -D;
+    *npm instala e geri pacotes, npx os executa;
+    -Para instalar o TypeScript: npm install typescript -D;
+    -Para inicializar o TypeScript: npx tsc --init: cria o arquivo config.ts;
+    -Para executar a aplicação npx ts-node src/server.ts (executar servidor);
+    -Ctrl + c para o servidor;
+    -Para o servidor atualizar automaticamente se ter que para-lo toda vez: 
+    npm install ts-node-dev -D;
+    -Agora, para executar o servidor automático: npx ts-node-dev src/server.ts;
+    -No package.json, substituir o test por dev e o que esta na frente por
+    ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts, vc pode rodar npm run dev;
+    -React: biblioteca para construção de interfaces;
+    -SPA: Single-Page Applications;
+    -Para instalar o react: npx create-react-app web --template typescript
+    -Para executar o app web: npm start;
+    -Rota: endereço completo da requisição;
+    -Recurso: qual entidade estamos acessando do sistema;
+    -GET: Buscar uma ou mais informações do back-end;
+    -POST: Criar uma nova informação no back-end;
+    -PUT: Atualizar uma informação existente no back-end;
+    -DELETE: Remover uma informação do backend;
+
+    -Request Param: parâmetros que veem na própria rota que identificam um recurso;
+    -Query Param: parâmetros que veem na própria rota, geralmente opcionais: filtros, paginação;
+    -Request Body: parâmetros para criação alteração de informações de usuário;
+
+    -SELECT * FROM users WHERE name = 'Saulo';
+    -knex('users').where('name', 'Diego').select('*');
+
+    -Para instalar o knex: npm install knex: permite realizar conexção com banco de dados e implementar
+    as querys;
+    -Migrations = Histórico do banco de dados
+    -Para rodar uma migration: npx knex migrate:latest --knexfile knexfile.ts migrate:latest;
+    -Para não ter que rodar esse comando toda vez, vc pode adicionar um script da mesma forma que a
+    anterior "knex:migrate": "knex --knexfile knexfile.ts migrate:latest";
+    -Para rodar, agora use npm run knex:migrate
+    -Para executar a seed adiconar: "knex:seed": "knex --knexfile knexfile.ts seed:run"
+    -Para rodar npm run knex:seed
+    
+    -Service Pattern: todo e qualquer tipo de lógica
+    -Repository Patern: Todo código de banco de dados
+    
+    -CORS: define quais endereços externos vão ter acesso a nossas aplicações
+    -Para instalar o CORS: npm install cors
+    -Para instalar os tipagem de dados: npm install @types/cors -D
+-->
