@@ -37,7 +37,7 @@ const Points = () => {
     const navigation = useNavigation();
     const route = useRoute();
     const routeParams = route.params as Params;
-    
+ 
     useEffect(() => {
         async function loadPosition(){
             const { status } = await Location.requestPermissionsAsync();
@@ -74,7 +74,6 @@ const Points = () => {
         }).then(response => {
             setPoints(response.data);
         })
-        console.log(points);
     }, [selectedItems]);
 
     function handleNavigateBack(){
