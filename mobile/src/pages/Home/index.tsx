@@ -79,14 +79,14 @@ function handleSelectCity(newCity: string){
 
               <View style={styles.footer}>
                   <RNPickerSelect
-                    placeholder={{label: 'Selecione uma cidade...', value: null}}
+                    placeholder={{label: 'Selecione um estado...', value: null}}
                     onValueChange={(value) => handleSelectUf(value)}
                     items={
                       ufs.map(uf => ({key: uf, label: uf, value: uf}))
                     }
                   />
                   <RNPickerSelect
-                    placeholder={{label: "Selecione um estado...", value: ''}}
+                    placeholder={{label: "Selecione uma cidade...", value: ''}}
                     onValueChange={(value) => handleSelectCity(value)}
                     items={
 
